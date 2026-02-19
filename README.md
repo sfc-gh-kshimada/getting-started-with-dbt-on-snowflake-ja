@@ -173,11 +173,15 @@ packages:
 
 dbtツールバーから**deps**を選択し、`dbt_access_integration` を入力して実行します。
 
-### dbt test（オプション）
+### dbt test
 
-`dbt deps` の実行後に利用可能です。
+`tasty_bytes_dbt_demo/models/staging/__sources.yml` にデータテストが定義されています。dbtツールバーから**test**を選択して実行します。
 
-`tasty_bytes_dbt_demo/models/staging/__sources.yml` にデータテストが定義されています。219行目の `max_value` を `10000` に修正してテストを通過させます:
+現在のテストはdbt組み込みテスト（`not_null`、`unique`、`relationships`）とプロジェクト内のカスタムテスト（`is_positive_amount`）のみを使用しているため、`dbt deps` なしで実行できます。
+
+#### dbt_utilsテストの追加（オプション）
+
+`dbt deps` 実行後、`dbt_utils` パッケージのテストを追加できます。例えば、`__sources.yml` に以下のようなテストを追加できます:
 
 ```yaml
         - dbt_utils.accepted_range:
