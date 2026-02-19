@@ -75,7 +75,7 @@ cl.last_name, cl.phone_number, cl.e_mail;
 
 1. **Workspace**ドロップダウン > **Create Workspace From Git Repository** をクリック
 2. 以下の情報を入力:
-   - **Repository URL**: `https://github.com/Snowflake-Labs/getting-started-with-dbt-on-snowflake.git`
+   - **Repository URL**: `https://github.com/sfc-gh-kshimada/getting-started-with-dbt-on-snowflake-ja`
    - **Workspace Name**: `Example-dbt-Project`
    - **API Integration**: `GIT_INTEGRATION`
    - **Public Repository** を選択
@@ -328,6 +328,6 @@ tasty_bytes_dbt_demo/
 ## 関連リソース
 
 - [dbt Projects on Snowflake ドキュメント](https://docs.snowflake.com/user-guide/data-engineering/dbt-projects-on-snowflake)
-- [GitHubリポジトリ: getting-started-with-dbt-on-snowflake](https://github.com/Snowflake-Labs/getting-started-with-dbt-on-snowflake)
+- [GitHubリポジトリ: getting-started-with-dbt-on-snowflake-ja](https://github.com/sfc-gh-kshimada/getting-started-with-dbt-on-snowflake-ja)
 - [dbt Core ドキュメント](https://docs.getdbt.com/)
 - [Semantic View ブログ](https://www.snowflake.com/en/engineering-blog/dbt-semantic-view-package/)
