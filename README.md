@@ -317,7 +317,11 @@ tasty_bytes_dbt_demo/
 ├── tests/
 │   └── generic/
 └── setup/
-    └── tasty_bytes_setup.sql
+    ├── tasty_bytes_setup.sql  # 初期セットアップ
+    └── demo_reset.sql         # デモリセット用
+
+demo/
+└── README.md                # Snowpark & Cortex Code デモ手順書（5分）
 ```
 
 ## まとめ
@@ -335,3 +339,11 @@ tasty_bytes_dbt_demo/
 - [GitHubリポジトリ: getting-started-with-dbt-on-snowflake-ja](https://github.com/sfc-gh-kshimada/getting-started-with-dbt-on-snowflake-ja)
 - [dbt Core ドキュメント](https://docs.getdbt.com/)
 - [Semantic View ブログ](https://www.snowflake.com/en/engineering-blog/dbt-semantic-view-package/)
+
+## デモ資料
+
+Snowpark & Cortex Codeのデモ手順書は [demo/README.md](./demo/README.md) を参照してください。
+
+- **デモ時間**: 5分
+- **内容**: dbt Projects on Snowflake、Snowpark DataFrame、Cortex Codeの開発支援
+- **リセット**: デモをやり直す場合は `tasty_bytes_dbt_demo/setup/demo_reset.sql` を実行
